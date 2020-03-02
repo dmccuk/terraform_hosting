@@ -42,7 +42,7 @@ module "ec2_med" {
   instance_count   = var.count_med
   instance_type    = "t2.medium"
   name_prefix      = "med"
-  ami              = var.ami
+  ami              = "ami-03d8059563982d7b0"
   provision_script = "files/standard.sh"
 }
 
@@ -71,7 +71,7 @@ module "jenkins" {
   instance_count   = var.count_jenkins
   instance_type    = "t2.micro"
   name_prefix      = "jenkins"
-  ami              = var.ami
+  ami              = "ami-03d8059563982d7b0"
   provision_script = "files/jenkins_install.sh"
 }
 
